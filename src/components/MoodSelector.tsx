@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import type { ComponentType } from 'react';
 import { Button } from '@/components/ui/button';
 import { Smile, Frown, Heart, Coffee, Zap, Cloud } from 'lucide-react';
 
 interface Mood {
   id: string;
   label: string;
-  icon: React.ComponentType<any>;
+  icon: ComponentType<any>;
   gradient: string;
   description: string;
 }
